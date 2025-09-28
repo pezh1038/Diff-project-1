@@ -1,0 +1,5 @@
+function m = Msolution(t)
+
+m = 85 - 10 * cos((pi * (t-5)) / 12); %the equation for M(t)
+
+end

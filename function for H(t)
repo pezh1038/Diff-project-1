@@ -1,0 +1,5 @@
+function [h] = Hsolution(t)
+
+h = 7 * sech((3/4) * (t - 10)); %the equation for H(t)
+
+end

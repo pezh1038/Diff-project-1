@@ -2,6 +2,11 @@ clc;
 clear;
 close all;
 %% Define Function for T
+% Mi = initial external heat
+% k = equilibrium constant
+% ti = initial time
+% tf = final time
+% Ti = initial internal heat
 
 function [T] = temp_H0_Q0_Mconst(Mi, k, ti, tf, Ti)
     for i = ti:tf
@@ -25,7 +30,7 @@ plot(time, T50);
 hold on
 plot(time, T80);
 yline(75, 'k', 'External Temp')
-legend('Tint less than Text', 'Tint greater than Text')
+legend('T_int less than T_ext', 'T_int greater than T_ext') % T internal and T external
 hold off
 
 %% Call Function for Different Kappas

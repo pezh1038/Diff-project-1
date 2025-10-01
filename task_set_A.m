@@ -30,6 +30,9 @@ plot(time, T50);
 hold on
 plot(time, T80);
 yline(75, 'k', 'External Temp')
+xlabel('Time[hrs]')
+ylabel('Temperature[°F]')
+title('Initial Condition Changes to Equilibrium Curve')
 legend('T_int less than T_ext', 'T_int greater than T_ext') % T internal and T external
 hold off
 
@@ -44,4 +47,7 @@ plot(time, k1)
 hold on
 plot(time, k0_5)
 plot(time, k0_25)
+xlabel('Time[hrs]')
+ylabel('Temperature[°F]')
+title('Kappa Changes to Equilibrium Curve')
 legend('Kappa = 1', 'Kappa = 0.5', 'Kappa = 0.25')
